@@ -1,0 +1,339 @@
+@import url(roots/style.css);
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Gotham SSm', sans-serif;
+
+}
+
+nav {
+    height: 10vh;
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    display: flex;
+
+
+}
+
+.project,
+.product {
+
+    position: relative;
+}
+
+.project ul,
+.product ul {
+    position: absolute;
+    background-color: #252525;
+    margin-top: 10px;
+    margin-left: 165px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.product a,
+.project a {
+    text-decoration: none;
+    color: white;
+}
+
+.product li,
+.project li {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product li:hover,
+.project li:hover {
+    background-color: #50717b;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: 150px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    color: #ffffff;
+}
+
+.project button:focus+ul,
+.product button:focus+ul {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.cart,
+.cart a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.head {
+    text-align: center;
+    margin-top: 25px;
+    border-bottom: 1px #252525 solid;
+}
+
+.head h1 {
+    font-size: 55px;
+    color: #252525;
+    margin-bottom: 15px;
+}
+
+
+.adrs3 p {
+    line-height: 1.6;
+    color: #252525;
+    font-size: 22px;
+    pointer-events: none;
+}
+
+.adrs3 h1 {
+    margin-bottom: 10px;
+    color: #50717b;
+    font-size: 35px;
+    pointer-events: none;
+}
+
+.main_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sender {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 200px;
+    gap: 15px;
+    margin-top: 70px;
+    /* justify-content: center;
+    align-items: center; */
+    /* top: 0; */
+
+}
+
+.sender input {
+    border: 1.5px #252525 solid;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.us {
+    padding: 10px;
+    padding-inline: 40px;
+}
+
+.agi {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 10;
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+    outline: none;
+    border: 1.5px #252525 solid;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #50717b;
+    border-color: #50717b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #50717b;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.bottom {
+    margin-top: 30px;
+    padding-top: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 100px;
+    margin: auto;
+    /* margin-left: 50px; */
+    color: #ffffff;
+    /* background-color: #f4c430; */
+    margin-inline: 30px;
+    width: 100%;
+  }
+  
+  .bottom h2 {
+    font-size: 30px;
+  }
+  
+  .flw i {
+    font-size: 20px;
+  }
+  
+  .bottom p {
+    font-size: 16px;
+    line-height: 1.7;
+    width: 230px;
+    cursor: pointer;
+    border-bottom: 1px #252525 solid;
+  }
+  
+  .adrs2 .this {
+    font-size: 16px;
+    line-height: 1.7;
+    padding-right: 80px;
+  }
+  
+  .bottom p:hover {
+    text-decoration: underline;
+  }
+  
+  .rewd {
+    color: #fd5530;
+    width: 250px;
+    margin: auto;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #252525;
+  }
+  
+  .adrs2 .mail input {
+    outline: none;
+    border: 1px #fd5530 solid;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background: none;
+    margin-top: 10px;
+  }
+  
+  .adrs2 .mail input:focus {
+    border: 1px white solid;
+    color: white;
+  }
+  
+  .mail button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    border: 1px #fd5530 solid;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: #fd5530;
+  }
+  
+  .mail button:hover {
+    background-color: white;
+    color: #fd5530;
+    border: 1px solid white;
+  }
+  
+  .logos {
+    margin: 10px 0px 0px 15px;
+    font-size: 24px;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+  }
+  
+  .logos i:hover {
+    transform: scale(1.3);
+    color: #f4c430;
+    margin-top: 5px;
+  }
+  
+  .booot {
+    background-color: #252525;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .booot p {
+    width: 200px;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+  
+  .up,
+  .down {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .up:hover,
+  .down:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .menu a:hover {
+    color: #8ecccc;
+  }
+  
+  @media screen and (max-width:1252px) {
+    .sender {
+      margin-left: 35px;
+    }
+  }
+
+  @media screen and (max-width:1084px) {
+    .main_head {
+      grid-template-columns: auto auto;
+    }
+    
+    .agi {
+      grid-column: 1 / 3 ;
+      grid-row: 1 / 5;
+    }
+
+    .this {
+      margin-right: 0px;
+    }
+  }
